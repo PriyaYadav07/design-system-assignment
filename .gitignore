@@ -1,0 +1,14 @@
+
+node_modules
+dist
+build
+.storybook/node_modules
+
+
+.DS_Store
+*.log
+
+
+.next
+.vite
+coverage

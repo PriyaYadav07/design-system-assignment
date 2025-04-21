@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Typography */
+@layer components {
+  .heading {
+    @apply font-bold text-gray-900 dark:text-white;
+  }
+
+  .paragraph {
+    @apply text-base text-gray-700 dark:text-gray-300;
+  }
+
+  .caption {
+    @apply text-xs text-gray-500 dark:text-gray-400;
+  }
+
+  .label {
+    @apply text-sm font-medium text-gray-800 dark:text-gray-200;
+  }
+
+  .helper-text {
+    @apply text-sm text-gray-500 dark:text-gray-400;
+  }
+}
+
+/* Inputs */
+@layer components {
+  .text-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-white;
+  }
+
+  .text-input-error {
+    @apply border-red-500 text-red-600 focus:ring-red-500 focus:border-red-500;
+  }
+
+  .input-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300;
+  }
+}
+
+/* Feedback - Toasts */
+@layer components {
+  .toast {
+    @apply fixed bottom-4 right-4 px-4 py-2 rounded-md shadow-lg text-white text-sm font-medium transition-all z-50;
+  }
+
+  .toast-success {
+    @apply bg-green-600;
+  }
+
+  .toast-error {
+    @apply bg-red-600;
+  }
+
+  .toast-info {
+    @apply bg-blue-600;
+  }
+
+  .toast-warning {
+    @apply bg-yellow-500 text-black;
+  }
+}
+
